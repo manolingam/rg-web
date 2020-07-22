@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+
+.projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ff3864;
+}
+
+.projects h3 {
+    font-size: 2rem;
+    font-family: "Uncial Antiqua", cursive;
+    margin-bottom: 20px;
+}
+
+.projects .project-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-images img {
+    width: 250px;
+    height: auto;
+}

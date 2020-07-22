@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+
+.landing-view {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #ff3864;
+}
+
+.landing-view .sub-container-1 {
+    min-width: 50%;
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-view .sub-container-2 {
+    min-width: 50%;
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.landing-view #banner {
+    width: 100%;
+    height: auto;
+}
+
+.landing-view .call-to-action {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.landing-view .call-to-action a {
+    padding: 5px;
+    color: #ff3864;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: #000;
+    margin: 0 5px 0 5px;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border-bottom: 4px solid #ff3864;
+    transition: all 0.1s ease-in-out;
+    font-family: "Uncial Antiqua", cursive;
+}
+
+.landing-view .call-to-action a:hover {
+    border-bottom-width: 0;
+    margin-top: 3px;
+}
+
+.landing-view p {
+    font-size: 2rem;
+    width: 600px;
+    margin-bottom: 20px;
+    text-align: center;
+    /* color: #a325bd; */
+}

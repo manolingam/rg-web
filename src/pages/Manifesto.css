@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap");
+
+.manifesto {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #ff3864;
+}
+
+.manifesto .sub-container-1 {
+    min-width: 50%;
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manifesto .sub-container-2 {
+    min-width: 50%;
+    max-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.manifesto #fantasy-tee {
+    width: 330px;
+    height: auto;
+}
+
+.manifesto h3 {
+    font-size: 2rem;
+    font-family: "Uncial Antiqua", cursive;
+}
+
+.manifesto p {
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+    width: 600px;
+    margin: 10px;
+}
