@@ -16,7 +16,6 @@ const Home = () => {
                 <div className='call-to-action'>
                     <Link to='/join'>Join Us</Link>
                     <Link to='/recruit'>Recruit Us</Link>
-                    <Link to='/consult'>Consult Us</Link>
                 </div>
             </div>
             <div className='sub-container-2'>

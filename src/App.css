@@ -10,6 +10,13 @@
     scroll-snap-type: y mandatory;
 }
 
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px 0 0 10px;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -29,11 +36,16 @@ section {
     max-width: 98vw;
 }
 
+.wave.close {
+    visibility: hidden;
+    transition: all 1s ease-out;
+}
+
 #logo {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 350px;
+    width: 300px;
     height: auto;
     margin: 0 0 20px 20px;
 }
@@ -42,7 +54,7 @@ footer {
     position: fixed;
     bottom: 0;
     right: 0;
-    margin: 0 10px 10px 0;
+    margin: 0 20px 15px 0;
 }
 
 footer a {
@@ -51,6 +63,79 @@ footer a {
 
 .fa-twitter,
 .fa-book,
-.fa-github {
+.fa-github,
+.fa-bars {
     color: #ff3864;
+}
+
+.fa-bars {
+    transition: all 1s ease-out;
+}
+
+.fa-bars:hover {
+    transform: rotateZ(90deg);
+    transition: all 1s ease-out;
+    cursor: pointer;
+}
+
+.nav-links {
+    position: fixed;
+    background: #000;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at -90% -20%);
+    -webkit-clip-path: circle(100px at -90% -20%);
+    transition: all 2s ease-out;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-links.open {
+    clip-path: circle(2000px at 90% -10%);
+    -webkit-clip-path: circle(2000px at 90% -10%);
+    pointer-events: all;
+}
+
+.nav-links li {
+    list-style: none;
+    opacity: 0;
+}
+
+.nav-links li a {
+    font-size: 25px;
+    color: #ff3864;
+    text-decoration: none;
+}
+
+.nav-links li a::after {
+    transition: all ease-in-out 0.2s;
+    background: none repeat scroll 0 0 #ff3864;
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+.nav-links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+}
+
+.nav-links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+}
+
+.nav-links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+}
+
+li.fade {
+    opacity: 1;
 }
